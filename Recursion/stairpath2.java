@@ -2,7 +2,8 @@ import java.util.*;
 public class stairpath2 {
     // using  of 1 and 3 step  in stair
     public static int stair(int n){
-        if(n==1||n==3) return n;
+        if(n<=2) return 1;
+        if(n==3) return 2;
         return stair(n-1)+stair(n-3);
     }
     public static void main(String[] args) {
