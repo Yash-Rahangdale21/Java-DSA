@@ -2,7 +2,7 @@ package twopointer;
 
 public class AnotherappZeroandOne {
 
-    // 1,0,,0,1,0,1,0,1,0,0
+    // 1,0,0,1,0,1,0,1,0,0
     static void swap(int[] arr, int i, int j) {
         int temp = arr[i];
         arr[i] = arr[j];
