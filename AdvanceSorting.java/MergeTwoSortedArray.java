@@ -11,7 +11,7 @@ public class MergeTwoSortedArray {
             if(a[i]>=b[j]){
                 c[k++] = b[j++];
             }
-            else{
+            else{ // a[i]<b[j]
                 c[k++] = a[i++];
             }
         }
@@ -19,8 +19,8 @@ public class MergeTwoSortedArray {
         while(i<a.length)  c[k++] = a[i++];
     }
     public static void main(String[] args) {
-        int [] a ={10,50,60,70,90};
-        int [] b = {8,20,40,50,60};
+        int [] a ={10,16,25,37,54};
+        int [] b = {8,14,20,21,60};
         int [] c = new int[a.length+b.length];
         merge(a,b,c);
         print(c);
