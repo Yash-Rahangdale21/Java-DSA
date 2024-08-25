@@ -1,9 +1,5 @@
-
-
 public class evenorodd {
-    
-
-        // 1,2,3,64,52,97,6,3,
+    // 1,2,3,64,52,97,6,3,
         static void swap(int[] arr, int i, int j) {
             int temp = arr[i];
             arr[i] = arr[j];
