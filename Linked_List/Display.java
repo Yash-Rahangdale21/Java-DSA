@@ -19,7 +19,7 @@ public class Display {
 
     }
     public static void main(String[] args) {
-        Node a = new Node(10);  //head  node 
+        Node a = new Node(10); //head  node 
         Node b = new Node(20);
         Node c = new Node(30);
         Node d = new Node (40);

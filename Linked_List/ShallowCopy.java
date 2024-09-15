@@ -2,7 +2,7 @@
 public class ShallowCopy { 
     // shallow copy of node
     public static void main(String[] args) {
-        Node a = new Node(10);  //head  node 
+        Node a = new Node(10); //head  node 
         
         Node temp = a;  // a is shallow copy hai temp me
         System.out.println(a);
