@@ -145,6 +145,14 @@ class SLL{  //user defined data structure
     //     size--;
     // }
 
+    int FindTail(){
+        Node temp = head;
+        while(temp.next != null){
+            temp = temp.next;
+        }
+        return temp.val;
+    }
+
 }
 
 
@@ -196,6 +204,9 @@ public class Implement {
         list.display();
         list.size();
         System.out.println(list.tail.val);
+        list.display();
+
+        System.out.println(list.FindTail());
         
 
 
