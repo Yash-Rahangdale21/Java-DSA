@@ -12,9 +12,10 @@ public class Display {
     // using recursion 
 
     public static void displayRecursive(Node head){
-        if(head == null) return;
-        System.out.println(head.val);
-        displayRecursive(head.next);
+        Node temp = head;
+        if(temp == null) return;
+        System.out.println(temp.val);
+        displayRecursive(temp.next);
 
 
     }
