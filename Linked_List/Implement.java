@@ -63,13 +63,13 @@ class SLL{  //user defined data structure
             insertAtEnd(val);
             return;
         }
-        if(idx>size){
+        if(idx>size || idx <0){
             System.out.println("Invaid idx");
             return;
         }
         Node temp = new Node(val);
         Node x = head;
-        for(int i = 1;i<=idx;i++){
+        for(int i = 1;i<=idx-1;i++){
             x = x.next;
         }
 
