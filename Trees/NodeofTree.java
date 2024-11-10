@@ -35,13 +35,28 @@ public class NodeofTree{
         c.right = f;
 
 
-        System.out.println(a.left.val);
-        System.out.println(e.val);
-        System.out.println(a.left.right.val);
+        // System.out.println(a.left.val);
+        // System.out.println(e.val);
+        // System.out.println(a.left.right.val);
 
 
         display(a);
+        System.out.println();
+        System.out.println("Sum of all nodes " + sum(a));
+        System.out.println("Product of all the nodes = "+ product(a));
+       
+        
 
     }
-    
+    private static int sum(TreeNode root ){
+        if(root == null) return 0;
+        return root.val+sum(root.left)+sum(root.right);
+    }
+
+    private static int product(TreeNode root){
+        if(root == null ) return 1;
+        return root.val*product(root.left)*product(root.right);
+    }
+
+   
 }
