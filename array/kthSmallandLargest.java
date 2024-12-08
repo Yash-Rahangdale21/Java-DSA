@@ -5,7 +5,7 @@ public class kthSmallandLargest {
     static int[] check(int []arr,int k){
         Arrays.sort(arr);
         int m = arr.length;
-        int []ans =new int(m);
+        int []ans =new int[m];
         for(int i = 0;i<m;i++){
 
         }

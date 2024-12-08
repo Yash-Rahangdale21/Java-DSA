@@ -1,6 +1,4 @@
 import java.util.Scanner;
-
-
 public class NthlevelTraversal {
     static int n ;
     public static void main(String[] args) {
@@ -21,15 +19,30 @@ public class NthlevelTraversal {
         b.left = d; b.right = e;
         c.left = f; c.right = g;
         g.left = h;
-        System.out.println("Enter the level which you are find element : ");
-        n = sc.nextInt();
-        Nthlevel(a,0);
+        // System.out.println("Enter the level which you are find element : ");
+        // n = sc.nextInt();
+        // Nthlevel2(a,0);
+        for(int x = 0;x<=3;x++){
+            n =x;
+            Nthlevel(a, 0);
+            System.out.println();
+        }
     }
+    /// without using of Bfs 
     public  static void  Nthlevel(TreeNode root,int level){
         if(root == null) return;
         if(level == n) System.out.print(root.val + " ");
         Nthlevel(root.left,level+1);
         Nthlevel(root.right,level+1);
 
-    }
+    }   
+
+
+    // public  static void  Nthlevel2(TreeNode root,int level){
+    //     if(root == null) return;
+    //     if(level == n) System.out.print(root.val + " ");
+    //     Nthlevel2(root.left,level+1);
+    //     Nthlevel2(root.right,level+1);
+
+    // }
 }

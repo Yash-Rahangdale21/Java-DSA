@@ -1,5 +1,3 @@
-
-
 public class Largestelementarray {
     //find the second largest element in given array . 
     static int Largest(int []arr){
