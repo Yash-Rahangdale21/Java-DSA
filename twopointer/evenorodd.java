@@ -8,6 +8,7 @@ public class evenorodd {
         }
     
         static void sort2(int[] arr) {
+            //  n means give the size of array 
             int n = arr.length;
             int left = 0 ;
             int right=  n-1;
