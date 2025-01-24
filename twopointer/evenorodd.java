@@ -10,6 +10,7 @@ public class evenorodd {
         static void sort2(int[] arr) {
             //  n means give the size of array 
             // we are using two pointer concept 
+            // new concept
             int n = arr.length;
             int left = 0 ;
             int right=  n-1;
