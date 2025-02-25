@@ -5,7 +5,7 @@ public class evenorodd {
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
-        }
+        }//..
     
         static void sort2(int[] arr) {
             //  n means give the size of array 
