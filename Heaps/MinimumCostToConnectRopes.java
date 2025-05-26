@@ -14,6 +14,6 @@ public class MinimumCostToConnectRopes {
             minHeap.add(x + y);
         }
         System.out.println(cost);
-        // Output: 29
+        // Output: 29 .
     }
 }
