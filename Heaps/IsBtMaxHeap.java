@@ -7,23 +7,26 @@ class Node{
     }
 }
 public class IsBtMaxHeap {
-    public  boolean isMaxHeap(Node root) {
+    public static boolean isMaxHeap(Node root) {
         int size = size(root);
         return isHOP(root) && isCompleteBinaryTree(root,0,size);
        
     }
-    private int size(Node root) {
+    private static int size(Node root) {
         if (root == null) return 0;
         return 1 + size(root.left) + size(root.right);}
    
-     private boolean isHOP(Node root) {
+     private static boolean isHOP(Node root) {
         if (root == null) return true;
         if (root.left != null && root.left.val > root.val) return false;
         if (root.right != null && root.right.val > root.val) return false;
         return isHOP(root.left) && isHOP(root.right);
     }
-    private boolean isCompleteBinaryTree(Node root,int i,int size) {
-        
+    private static boolean isCompleteBinaryTree(Node root,int i,int size) {
+        if(root == null) return true;
+        if(i>= size) return false;
+        return isCompleteBinaryTree(root.left, 2 * i + 1, size) && 
+               isCompleteBinaryTree(root.right, 2 * i + 2, size);
     }
     public static void main(String[] args) {
         Node a = new Node(10);  // a is the root 
@@ -34,7 +37,7 @@ public class IsBtMaxHeap {
         Node f = new Node(5);
 
         a.left =b;  a.right = c;
-        b.left = d; b.right = e;
+        b.left = d; c.right = e;
        
         System.out.println(isMaxHeap(a)); 
     }
