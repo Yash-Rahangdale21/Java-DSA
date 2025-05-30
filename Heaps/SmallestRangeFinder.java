@@ -45,7 +45,7 @@ public class SmallestRangeFinder {
             
             pq.add(new Triplet(next, row, col + 1));
             max = Math.max(max, next);
-            // If we reach the end of any list, we break
+            // If we reach the end of any list, we break .
            
         }
         return ans;
