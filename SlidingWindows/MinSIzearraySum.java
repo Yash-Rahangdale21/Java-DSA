@@ -18,7 +18,7 @@ public class MinSIzearraySum {
         if(minLength == Integer.MAX_VALUE) {
             System.out.println("No subarray found with sum >= " + 0);
         } else {
-            System.out.println("Minimum size of subarray with sum >= " + k + " is: " + minLength);
+            System.out.println("Minimum size of subarray with sum >= " + k + " is: " + minLength); // gh
         }
 }
 
