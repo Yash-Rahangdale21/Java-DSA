@@ -7,7 +7,7 @@ public class MinSIzearraySum {
         int n = arr.length;
         int i = 0, j = 0, sum = 0, minLength = Integer.MAX_VALUE;
         while (j < n) {
-            sum += arr[j]; // Expand the window by adding the rightmost element
+            sum += arr[j]; // Expand the window by adding the rightmost element yes
             while (sum >= k) { // Contract the window from the left
                 minLength = Math.min(minLength, j - i + 1);
                 sum -= arr[i]; // Remove the leftmost element
@@ -21,14 +21,6 @@ public class MinSIzearraySum {
             System.out.println("Minimum size of subarray with sum >= " + k + " is: " + minLength); // gh
         }
 }
-
-
-
-
-
-
-
-
 
 
 }
