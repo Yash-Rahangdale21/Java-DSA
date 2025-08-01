@@ -1,7 +1,7 @@
 public class ValidPerfectSquare {
     public static void main(String[] args) {
         ValidPerfectSquare vps = new ValidPerfectSquare();
-        int num = 16; 
+        int num = 49; 
         boolean result = vps.isPerfectSquare(num);
         System.out.println("Is " + num + " a perfect square? " + result);
     }
@@ -18,5 +18,6 @@ public class ValidPerfectSquare {
             else right = mid - 1;
         }
         return false;
+        //
     }
 }
