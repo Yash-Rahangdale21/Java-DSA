@@ -18,6 +18,6 @@ public class ValidPerfectSquare {
             else right = mid - 1;
         }
         return false;
-        //
+        // perfect squares
     }
 }
