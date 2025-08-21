@@ -12,7 +12,7 @@ public class addBinary {
             result.append(sum % 2);
             carry = sum / 2;
         }
-        return result.reverse().toString();
+        return result.reverse().toString(); //
     }
 
     public static void main(String[] args) {
