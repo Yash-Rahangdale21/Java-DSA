@@ -24,7 +24,7 @@ public class BaseBall {
         return sum;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //
         String[] operations = {"5", "2", "C", "D", "+"};
         System.out.println("Final Score: " + calPoints(operations)); // Expected output: 30
     }
