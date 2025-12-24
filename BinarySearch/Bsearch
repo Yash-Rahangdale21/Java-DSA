@@ -6,11 +6,12 @@ public static void main(String[] args) {
         int result = binarySearch(arr, target);
         System.out.println("Element found at index: " + result);
     }
-public void binarySearch(int[] arr, int target) {
+public int  binarySearch(int[] arr, int target) {
         int left = 0;
         int right = arr.length - 1;
         
         while (left <= right) {
+            
             int mid = left + (right - left) / 2; // Avoids overflow
             
             if (arr[mid] == target) {
